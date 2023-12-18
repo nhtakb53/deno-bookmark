@@ -30,7 +30,7 @@ export default function Bookmark({ card }: BookmarkProps) {
       >
         <div class="relative group flex items-center justify-center h-full">
             <img
-              src={card.image}
+              src={card.image || "logo/deno.png"}
               alt={card.title}
               class="w-full h-full object-cover transition duration-300 filter group-hover:blur-sm"
             />
